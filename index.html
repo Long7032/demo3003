@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSI Education</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/teacher.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" /> -->
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header class="main-header d-flex sticky-top bg-light">
+        <div class="logo-section">
+            <img class="img-fluid w-100" src="./asset/logo.png" alt="Logo" />
+        </div>
+
+        <div class="content-section">
+            <div class="top-bar">
+                <button class="btn btn-outline-primary btn-sm btn-login d-none d-lg-inline" type="button">Đăng
+                    nhập</button>
+                <button class="btn btn-accent btn-lg btn-sm btn-register d-none d-lg-inline" type="button">Đăng
+                    ký</button>
+                <img src="https://flagcdn.com/w20/vn.png" alt="VN" class="flag-icon" title="Tiếng Việt" />
+                <img src="https://flagcdn.com/w20/us.png" alt="EN" class="flag-icon" title="English" />
+                <button type="menu" class="btn btn-accent btn-lg offcanvas-toggler-btn" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+
+            <nav class="navbar navbar-expand-lg navbar-dark main-navbar justify-content-center">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="bi bi-house-door me-1"></i>Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-info-circle me-1"></i>Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-person me-1"></i>Giáo viên</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
+                            <i class="bi bi-book me-1"></i>Ebook
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">Sách điện tử</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Tài liệu IELTS</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Tài liệu Toeic</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Đề thi tiếng Anh</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Tài liệu TOEFL</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Tài liệu SAT</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-controller"></i>Trò chơi</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Off Canvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Đóng"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#"><i class="bi bi-house-door me-1"></i>Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-info-circle me-1"></i>Giới thiệu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-person me-1"></i>Giáo viên</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                        href="#submenuEbook">
+                        <span><i class="bi bi-book me-1"></i>Ebook</span><i class="bi bi-caret-down-fill"></i>
+                    </a>
+                    <div class="collapse ps-3" id="submenuEbook">
+                        <ul class="list-unstyled fw-normal pb-1 small">
+                            <li>
+                                <a class="nav-link" href="#">Sách điện tử</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#">Tài liệu IELTS</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#">Tài liệu Toeic</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#">Đề thi tiếng Anh</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#">Tài liệu TOEFL</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#">Tài liệu SAT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="bi bi-controller"></i>Trò chơi</a>
+                </li>
+            </ul>
+            <div class="mt-4 d-lg-none d-flex gap-2">
+                <button type="button" class="btn btn-outline-primary btn-sm w-100">Đăng nhập</button>
+                <button type="button" class="btn btn-accent btn-lg btn-sm w-100">Đăng ký</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="text-center bg-white">
+        <div class="container">
+            <video class="w-100" autoplay muted loop playsinline poster="./asset/logo.png">
+                <source src="./asset/landingPageVideo.mp4" type="video/mp4">
+                Trình duyệt của bạn không hỗ trợ video HTML5.
+            </video>
+        </div>
+    </header>
+
+    <!-- Giới thiệu tổng quan -->
+    <section id="intro" class="section bg-light text-center py-5">
+        <div class="container">
+            <div class="section-title mb-4">
+                <h2 class="text-accent">Về chúng tôi</h2>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="./asset/logo.png" alt="Logo PSI" class="img-fluid" style="max-width: 300px;">
+                </div>
+                <div class="col-md-6 text-start">
+                    <p>
+                        PSI tự hào là nền tảng học tiếng Anh trực tuyến với chất lượng vượt trội, mang đến cho học viên
+                        trải nghiệm học tập cùng các giáo viên nước ngoài được đào tạo bài bản.
+                    </p>
+                    <p>
+                        Đội ngũ giáo viên tại PSI sở hữu nhiều năm kinh nghiệm, có bằng đại học và các chứng chỉ giảng
+                        dạy uy tín như TESOL, TEFL, TEYL, TESL. Mỗi giáo viên đều tâm huyết và luôn đồng hành cùng học
+                        viên vượt qua thử thách để vươn tới thành công.
+                    </p>
+                    <p>
+                        PSI được thành lập với sứ mệnh phổ cập tiếng Anh như ngôn ngữ thứ hai – mở ra cánh cửa đến kho
+                        tàng tri thức, khám phá văn hóa mới và chinh phục những cơ hội toàn cầu.
+                    </p>
+                    <p>
+                        Không chỉ là nơi học tập, PSI là nơi kiến tạo nên những giá trị đích thực cho thế hệ học sinh
+                        toàn cầu.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mt-4 justify-content-center">
+                <div class="col-lg-10">
+                    <p class="lead">
+                        PSI là nền tảng học tiếng Anh online duy nhất cho phép bạn tự đăng ký và tham gia lớp học trực
+                        tiếp với giáo viên nước ngoài – mọi lúc, mọi nơi, trên mọi thiết bị như máy tính, điện thoại hay
+                        máy tính bảng.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mt-5 text-center">
+                <div class="col-6 col-md-3 mb-3">
+                    <i class="bi bi-house fs-1 text-primary"></i><br>
+                    <strong>Tại nhà</strong>
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                    <i class="bi bi-cup-straw fs-1 text-success"></i><br>
+                    <strong>Tại quán cafe</strong>
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                    <i class="bi bi-building fs-1 text-info"></i><br>
+                    <strong>Tại công ty</strong>
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                    <i class="bi bi-tree fs-1 text-warning"></i><br>
+                    <strong>Tại công viên</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thành tựu -->
+    <section id="achievements" class="section text-center bg-white py-5">
+        <div class="container">
+            <div class="section-title mb-5">
+                <h2 class="text-accent">Thành tựu</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-sm-6 col-md-3">
+                    <div class="p-4 shadow-sm rounded bg-light h-100 hover-scale">
+                        <i class="bi bi-award-fill text-primary fs-1 mb-2"></i>
+                        <div class="counter fw-bold fs-2" data-target="15">0</div>
+                        <p class="mb-0">Năm kinh nghiệm</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="p-4 shadow-sm rounded bg-light h-100 hover-scale">
+                        <i class="bi bi-people-fill text-success fs-1 mb-2"></i>
+                        <div class="counter fw-bold fs-2" data-target="1000">0</div>
+                        <p class="mb-0">Giáo viên</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="p-4 shadow-sm rounded bg-light h-100 hover-scale">
+                        <i class="bi bi-mortarboard-fill text-warning fs-1 mb-2"></i>
+                        <div class="counter fw-bold fs-2" data-target="100000">0</div>
+                        <p class="mb-0">Học viên</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="p-4 shadow-sm rounded bg-light h-100 hover-scale">
+                        <i class="bi bi-calendar-event-fill text-danger fs-1 mb-2"></i>
+                        <div class="counter fw-bold fs-2" data-target="3000000">0</div>
+                        <p class="mb-0">Buổi học đã diễn ra</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vì sao nên chọn PSI Đồng Cấp -->
+    <section id="reason" class="bg-white py-5">
+        <div class="container">
+            <div class="section-title ">
+                <h2 class="text-accent">Vì sao nên chọn PSI Đồng Cấp</h2>
+            </div>
+            <div class="row text-center g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="p-4 bg-white shadow-sm rounded h-100 hover-scale">
+                        <i class="bi bi-globe text-primary fs-1 mb-3"></i>
+                        <h5 class="fw-bold">100% giáo viên nước ngoài</h5>
+                        <p>Giáo viên chuẩn quốc tế, giàu kinh nghiệm giảng dạy</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="p-4 bg-white shadow-sm rounded h-100 hover-scale">
+                        <i class="bi bi-cash-coin text-success fs-1 mb-3"></i>
+                        <h5 class="fw-bold">Chỉ từ 55.000đ/buổi</h5>
+                        <p>25 phút học hiệu quả, tiết kiệm chi phí</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="p-4 bg-white shadow-sm rounded h-100 hover-scale">
+                        <i class="bi bi-journal-bookmark-fill text-warning fs-1 mb-3"></i>
+                        <h5 class="fw-bold">Chương trình học đa dạng</h5>
+                        <p>Phù hợp với mọi độ tuổi và trình độ</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="p-4 bg-white shadow-sm rounded h-100 hover-scale">
+                        <i class="bi bi-person-video2 text-info fs-1 mb-3"></i>
+                        <h5 class="fw-bold">Tương tác 1:1 cùng thầy cô</h5>
+                        <p>Tập trung cá nhân hóa, hiệu quả tối đa</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="p-4 bg-white shadow-sm rounded h-100 hover-scale">
+                        <i class="bi bi-laptop text-danger fs-1 mb-3"></i>
+                        <h5 class="fw-bold">Học online mọi lúc mọi nơi</h5>
+                        <p>Thuận tiện, vui nhộn, linh hoạt thời gian</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3 justify-content-center">
+                <div class="col-12 col-md-10">
+                    <div class="highlight-callout text-center">
+                        Học với giáo viên quốc tế – Nâng tầm kỹ năng tiếng Anh của bạn!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lợi ích -->
+    <section id="benefit" class="bg-light py-5">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h2 class="text-accent fw-bold">Lợi ích khi học cùng PSI</h2>
+            </div>
+
+            <!-- Item 1 -->
+            <div class="row justify-content-start mb-4" data-aos="fade-left">
+                <div class="col-12 col-md-8">
+                    <div class="bg-white hover-scale rounded shadow-sm p-4 d-flex">
+                        <i class="bi bi-clock display-6 me-3"></i>
+                        <div>
+                            <h6 class="fw-bold mb-1">Học trực tuyến mọi lúc, mọi nơi</h6>
+                            <p class="mb-0">Không gian học quen thuộc, thời gian học được tối ưu để phù hợp với lịch
+                                trình cá nhân.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="row justify-content-end mb-4" data-aos="fade-right">
+                <div class="col-12 col-md-8">
+                    <div class="bg-white hover-scale rounded shadow-sm p-4 d-flex">
+                        <i class="bi bi-book display-6 me-3"></i>
+                        <div>
+                            <h6 class="fw-bold mb-1">Chương trình học đa dạng, hấp dẫn</h6>
+                            <p class="mb-0">Nội dung theo chuẩn quốc tế, giúp trẻ tăng khả năng tương tác và tự tin giao
+                                tiếp.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="row justify-content-start mb-4" data-aos="fade-left">
+                <div class="col-12 col-md-8">
+                    <div class="bg-white hover-scale rounded shadow-sm p-4 d-flex">
+                        <i class="bi bi-laptop display-6 me-3"></i>
+                        <div>
+                            <h6 class="fw-bold mb-1">Lớp học 1 kèm 1</h6>
+                            <p class="mb-0">Mô hình lớp học cá nhân hoá, nâng cao hiệu quả học tập tối đa cho từng học
+                                sinh.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="row justify-content-end mb-4" data-aos="fade-right">
+                <div class="col-12 col-md-8">
+                    <div class="bg-white hover-scale rounded shadow-sm p-4 d-flex">
+                        <i class="bi bi-graph-up display-6 me-3"></i>
+                        <div>
+                            <h6 class="fw-bold mb-1">Báo cáo tiến độ</h6>
+                            <p class="mb-0">Phụ huynh được cập nhật thường xuyên về sự tiến bộ và lộ trình học của con.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Khóa học -->
+    <section id="courses" class="section bg-white py-5">
+        <div class="container text-center">
+            <div class="section-title mb-5">
+                <h2 class="text-accent">Khóa học tiêu biểu</h2>
+            </div>
+
+            <div class="row g-4">
+                <!-- Card khóa học -->
+                <div class="col-sm-6 col-lg-4 col-xl-3">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="./asset/logo.png" class="card-img-top w-50 mx-auto mt-4" alt="Gia sư 1:1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Gia sư 1:1</h5>
+                            <ul class="ps-3 text-start small mb-3">
+                                <li>Giáo trình Global Success</li>
+                                <li>Ôn tập và học bài mới</li>
+                                <li>Tập trung trọng tâm lớp</li>
+                            </ul>
+                            <p class="mb-0">
+                                <span class="text-decoration-line-through text-muted">150.000đ</span><br>
+                                <span class="text-danger fw-bold">75.000đ / buổi (25 phút)</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 col-xl-3">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="./asset/logo.png" class="card-img-top w-50 mx-auto mt-4" alt="Gia sư 1:1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Gia sư 1:1</h5>
+                            <ul class="ps-3 text-start small mb-3">
+                                <li>Giáo trình Global Success</li>
+                                <li>Ôn tập và học bài mới</li>
+                                <li>Tập trung trọng tâm lớp</li>
+                            </ul>
+                            <p class="mb-0">
+                                <span class="text-decoration-line-through text-muted">150.000đ</span><br>
+                                <span class="text-danger fw-bold">75.000đ / buổi (25 phút)</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 col-xl-3">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="./asset/logo.png" class="card-img-top w-50 mx-auto mt-4" alt="Gia sư 1:1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Gia sư 1:1</h5>
+                            <ul class="ps-3 text-start small mb-3">
+                                <li>Giáo trình Global Success</li>
+                                <li>Ôn tập và học bài mới</li>
+                                <li>Tập trung trọng tâm lớp</li>
+                            </ul>
+                            <p class="mb-0">
+                                <span class="text-decoration-line-through text-muted">150.000đ</span><br>
+                                <span class="text-danger fw-bold">75.000đ / buổi (25 phút)</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="./asset/logo.png" class="card-img-top w-50 mx-auto mt-4" alt="Gia sư 1:1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Gia sư 1:1</h5>
+                            <ul class="ps-3 text-start small mb-3">
+                                <li>Giáo trình Global Success</li>
+                                <li>Ôn tập và học bài mới</li>
+                                <li>Tập trung trọng tâm lớp</li>
+                            </ul>
+                            <p class="mb-0">
+                                <span class="text-decoration-line-through text-muted">150.000đ</span><br>
+                                <span class="text-danger fw-bold">75.000đ / buổi (25 phút)</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row mt-3 justify-content-center">
+                <div class="col-12 col-md-10">
+                    <div class="highlight-callout text-center">
+                        Học trực tiếp 1:1 với giáo viên, nâng cao hiệu suất học tập!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- kỹ thuật tư duy tập trung -->
+    <section id="method" class="section bg-light py-5">
+        <div class="container text-center">
+            <div class="section-title mb-4">
+                <h2 class="text-accent">Kỹ thuật tư duy tập trung</h2>
+            </div>
+            <p class="lead fw-semibold text-dark-emphasis px-3 px-md-5">
+                <span class="bg-opacity-25 px-2 py-1 rounded highlight-animate">
+                    Kết nối<span class="fw-bold text-primary"> 5 giác quan </span>ở hiện tại,
+        
+
+                <span class="text-success">thúc đẩy học tiếng Anh vượt trội</span>
+                </span>
+            </p>
+            <div class="row justify-content-center g-4">
+                <div class="col-6 col-sm-4 col-md-2">
+                    <div class="bg-white rounded shadow-sm p-3 hover-scale h-100">
+                        <i class="bi bi-eye fs-1 text-primary"></i>
+                        <div class="fw-bold mt-2">Nhìn</div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2">
+                    <div class="bg-white rounded shadow-sm p-3 hover-scale h-100">
+                        <i class="bi bi-hand-index-thumb fs-1 text-success"></i>
+                        <div class="fw-bold mt-2">Chạm</div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2">
+                    <div class="bg-white rounded shadow-sm p-3 hover-scale h-100">
+                        <i class="bi bi-ear fs-1 text-danger"></i>
+                        <div class="fw-bold mt-2">Nghe</div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2">
+                    <div class="bg-white rounded shadow-sm p-3 hover-scale h-100">
+                        <i class="bi bi-flower2 fs-1 text-warning"></i>
+                        <div class="fw-bold mt-2">Ngửi</div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2">
+                    <div class="bg-white rounded shadow-sm p-3 hover-scale h-100">
+                        <i class="bi bi-cup-straw fs-1 text-info"></i>
+                        <div class="fw-bold mt-2">Nếm</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Giáo viên tiêu biểu -->
+    <section id="teachers" class="section bg-white py-5" aria-label="Giáo viên tiêu biểu">
+        <div class="container text-center">
+            <div class="section-title mb-5">
+                <h2 class="text-accent">Giáo viên tiêu biểu</h2>
+            </div>
+
+            <div id="teacherCarousel" class="carousel slide position-relative pb-5" data-bs-ride="carousel">
+                <!-- Slides -->
+                <div class="carousel-inner">
+                    <!-- Giáo viên 1 -->
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center g-4">
+                            <article class="col-12 col-md-10 d-flex flex-wrap bg-white p-4 shadow rounded">
+                                <!-- Avatar -->
+                                <div class="col-12 col-md-4 text-center mt-3 mb-md-0">
+                                    <img src="./asset/logo.png" alt="Ảnh giáo viên Nguyễn Đức Long"
+                                        class="img-fluid img-thumbnail w-75" />
+                                    <div class="mt-3">
+                                        <a href="/teacher/nguyen-duc-long" class="btn btn-outline-primary btn-sm">Xem hồ
+                                            sơ chi tiết</a>
+                                    </div>
+                                </div>
+
+                                <!-- Thông tin -->
+                                <div class="col-12 col-md-8 text-start">
+                                    <div class="teacher-header d-flex align-items-center gap-2">
+                                        <img src="https://flagcdn.com/w20/vn.png" alt="Quốc kỳ Việt Nam" class="flag" />
+                                        <h5 class="mb-0">Nguyễn Đức Long</h5>
+                                        <button class="btn btn-sm p-0 ms-2"
+                                            onclick="document.getElementById('audio1').play()"
+                                            aria-label="Nghe phát âm tên">
+                                            <i class="bi bi-volume-up volume-icon"></i>
+                                        </button>
+                                    </div>
+
+                                    <audio id="audio1">
+                                        <source src="demo-voice.mp3" type="audio/mpeg" />
+                                        Trình duyệt không hỗ trợ audio.
+                                    </audio>
+
+                                    <p class="mt-2 mb-2">Thân thiện, hòa đồng, có kinh nghiệm giảng dạy trẻ nhỏ hơn 10
+                                        năm.</p>
+                                    <p class="mb-2 text-warning">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star"></i>
+                                    </p>
+
+                                    <div class="mb-2 d-flex align-items-center">
+                                        <i class="bi bi-calendar-event me-2"></i>
+                                        <span>Lịch dạy hôm nay</span>
+                                    </div>
+
+                                    <!-- Toggle mobile -->
+                                    <button class="btn btn-outline-secondary d-md-none mb-3" data-bs-toggle="collapse"
+                                        data-bs-target="#schedule1">
+                                        <i class="bi bi-clock me-1"></i> Xem lịch dạy hôm nay
+                                    </button>
+
+                                    <!-- Lịch dạy -->
+                                    <div id="schedule1" class="collapse d-md-block">
+                                        <div class="mb-3">
+                                            <p class="m-1 fw-semibold">Buổi sáng</p>
+                                            <div class="time-grid">
+                                                <span class="time-slot">6:00</span><span
+                                                    class="time-slot">7:00</span><span
+                                                    class="time-slot">8:00</span><span
+                                                    class="time-slot">9:00</span><span
+                                                    class="time-slot">10:00</span><span class="time-slot">11:00</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="m-1 fw-semibold">Buổi chiều</p>
+                                            <div class="time-grid">
+                                                <span class="time-slot">12:00</span><span
+                                                    class="time-slot">13:00</span><span
+                                                    class="time-slot">14:00</span><span
+                                                    class="time-slot">15:00</span><span
+                                                    class="time-slot">16:00</span><span
+                                                    class="time-slot">17:00</span><span
+                                                    class="time-slot">18:00</span><span
+                                                    class="time-slot">19:00</span><span
+                                                    class="time-slot">20:00</span><span
+                                                    class="time-slot">21:00</span><span
+                                                    class="time-slot">22:00</span><span class="time-slot">23:00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <!-- Giáo viên 2 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center g-4">
+                            <article class="col-12 col-md-10 d-flex flex-wrap bg-white p-4 shadow rounded">
+                                <!-- Avatar -->
+                                <div class="col-12 col-md-4 text-center mt-3 mb-md-0">
+                                    <img src="./asset/logo.png" alt="Ảnh giáo viên Nguyễn Đức Long"
+                                        class="img-fluid img-thumbnail w-75" />
+                                    <div class="mt-3">
+                                        <a href="/teacher/nguyen-duc-long" class="btn btn-outline-primary btn-sm">Xem hồ
+                                            sơ chi tiết</a>
+                                    </div>
+                                </div>
+
+                                <!-- Thông tin -->
+                                <div class="col-12 col-md-8 text-start">
+                                    <div class="teacher-header d-flex align-items-center gap-2">
+                                        <img src="https://flagcdn.com/w20/vn.png" alt="Quốc kỳ Việt Nam" class="flag" />
+                                        <h5 class="mb-0">Nguyễn Đức Long</h5>
+                                        <button class="btn btn-sm p-0 ms-2"
+                                            onclick="document.getElementById('audio1').play()"
+                                            aria-label="Nghe phát âm tên">
+                                            <i class="bi bi-volume-up volume-icon"></i>
+                                        </button>
+                                    </div>
+
+                                    <audio id="audio1">
+                                        <source src="demo-voice.mp3" type="audio/mpeg" />
+                                        Trình duyệt không hỗ trợ audio.
+                                    </audio>
+
+                                    <p class="mt-2 mb-2">Thân thiện, hòa đồng, có kinh nghiệm giảng dạy trẻ nhỏ hơn 10
+                                        năm.</p>
+                                    <p class="mb-2 text-warning">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star"></i>
+                                    </p>
+
+                                    <div class="mb-2 d-flex align-items-center">
+                                        <i class="bi bi-calendar-event me-2"></i>
+                                        <span>Lịch dạy hôm nay</span>
+                                    </div>
+
+                                    <!-- Toggle mobile -->
+                                    <button class="btn btn-outline-secondary d-md-none mb-3" data-bs-toggle="collapse"
+                                        data-bs-target="#schedule1">
+                                        <i class="bi bi-clock me-1"></i> Xem lịch dạy hôm nay
+                                    </button>
+
+                                    <!-- Lịch dạy -->
+                                    <div id="schedule1" class="collapse d-md-block">
+                                        <div class="mb-3">
+                                            <p class="m-1 fw-semibold">Buổi sáng</p>
+                                            <div class="time-grid">
+                                                <span class="time-slot">6:00</span><span
+                                                    class="time-slot">7:00</span><span
+                                                    class="time-slot">8:00</span><span
+                                                    class="time-slot">9:00</span><span
+                                                    class="time-slot">10:00</span><span class="time-slot">11:00</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="m-1 fw-semibold">Buổi chiều</p>
+                                            <div class="time-grid">
+                                                <span class="time-slot">12:00</span><span
+                                                    class="time-slot">13:00</span><span
+                                                    class="time-slot">14:00</span><span
+                                                    class="time-slot">15:00</span><span
+                                                    class="time-slot">16:00</span><span
+                                                    class="time-slot">17:00</span><span
+                                                    class="time-slot">18:00</span><span
+                                                    class="time-slot">19:00</span><span
+                                                    class="time-slot">20:00</span><span
+                                                    class="time-slot">21:00</span><span
+                                                    class="time-slot">22:00</span><span class="time-slot">23:00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <!-- Giáo viên 3 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center g-4">
+                            <article class="col-12 col-md-10 d-flex flex-wrap bg-white p-4 shadow rounded">
+                                <!-- Avatar -->
+                                <div class="col-12 col-md-4 text-center mt-3 mb-md-0">
+                                    <img src="./asset/logo.png" alt="Ảnh giáo viên Nguyễn Đức Long"
+                                        class="img-fluid img-thumbnail w-75" />
+                                    <div class="mt-3">
+                                        <a href="/teacher/nguyen-duc-long" class="btn btn-outline-primary btn-sm">Xem hồ
+                                            sơ chi tiết</a>
+                                    </div>
+                                </div>
+
+                                <!-- Thông tin -->
+                                <div class="col-12 col-md-8 text-start">
+                                    <div class="teacher-header d-flex align-items-center gap-2">
+                                        <img src="https://flagcdn.com/w20/vn.png" alt="Quốc kỳ Việt Nam" class="flag" />
+                                        <h5 class="mb-0">Nguyễn Đức Long</h5>
+                                        <button class="btn btn-sm p-0 ms-2"
+                                            onclick="document.getElementById('audio1').play()"
+                                            aria-label="Nghe phát âm tên">
+                                            <i class="bi bi-volume-up volume-icon"></i>
+                                        </button>
+                                    </div>
+
+                                    <audio id="audio1">
+                                        <source src="demo-voice.mp3" type="audio/mpeg" />
+                                        Trình duyệt không hỗ trợ audio.
+                                    </audio>
+
+                                    <p class="mt-2 mb-2">Thân thiện, hòa đồng, có kinh nghiệm giảng dạy trẻ nhỏ hơn 10
+                                        năm.</p>
+                                    <p class="mb-2 text-warning">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star"></i>
+                                    </p>
+
+                                    <div class="mb-2 d-flex align-items-center">
+                                        <i class="bi bi-calendar-event me-2"></i>
+                                        <span>Lịch dạy hôm nay</span>
+                                    </div>
+
+                                    <!-- Toggle mobile -->
+                                    <button class="btn btn-outline-secondary d-md-none mb-3" data-bs-toggle="collapse"
+                                        data-bs-target="#schedule1">
+                                        <i class="bi bi-clock me-1"></i> Xem lịch dạy hôm nay
+                                    </button>
+
+                                    <!-- Lịch dạy -->
+                                    <div id="schedule1" class="collapse d-md-block">
+                                        <div class="mb-3">
+                                            <p class="m-1 fw-semibold">Buổi sáng</p>
+                                            <div class="time-grid">
+                                                <span class="time-slot">6:00</span>
+                                                <span class="time-slot">7:00</span>
+                                                <span class="time-slot">8:00</span>
+                                                <span class="time-slot">9:00</span>
+                                                <span class="time-slot">10:00</span>
+                                                <span class="time-slot">11:00</span>
+                                                <span class="time-slot">6:00</span>
+                                                <span class="time-slot">7:00</span>
+                                                <span class="time-slot">8:00</span>
+                                                <span class="time-slot">9:00</span>
+                                                <span class="time-slot">10:00</span>
+                                                <span class="time-slot">11:00</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="m-1 fw-semibold">Buổi chiều</p>
+                                            <div class="time-grid">
+                                                <span class="time-slot">12:00</span><span
+                                                    class="time-slot">13:00</span><span
+                                                    class="time-slot">14:00</span><span
+                                                    class="time-slot">15:00</span><span
+                                                    class="time-slot">16:00</span><span
+                                                    class="time-slot">17:00</span><span
+                                                    class="time-slot">18:00</span><span
+                                                    class="time-slot">19:00</span><span
+                                                    class="time-slot">20:00</span><span
+                                                    class="time-slot">21:00</span><span
+                                                    class="time-slot">22:00</span><span class="time-slot">23:00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators custom-dots">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"
+                        aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#teacherCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#teacherCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Đánh giá khách hàng -->
+    <section id="reviews" class="section bg-light">
+        <div class="container text-center">
+            <div class="section-title mb-5">
+                <h2 class="text-accent">Học viên nói gì về chúng tôi</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="./asset/logo.png" class="rounded-circle mb-3 w-50">
+                            <h5 class="card-title">Nguyễn Văn A</h5>
+                            <p class="card-text">"Tôi đã cải thiện phát âm rất nhiều nhờ chương trình học tại đây."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="./asset/logo.png" class="rounded-circle mb-3 w-50">
+                            <h5 class="card-title">Nguyễn Văn A</h5>
+                            <p class="card-text">"Tôi đã cải thiện phát âm rất nhiều nhờ chương trình học tại đây."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="./asset/logo.png" class="rounded-circle mb-3 w-50">
+                            <h5 class="card-title">Nguyễn Văn A</h5>
+                            <p class="card-text">"Tôi đã cải thiện phát âm rất nhiều nhờ chương trình học tại đây."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Đánh giá từ chuyên gia -->
+    <section class="section bg-white py-5">
+        <div class="container text-center px-3">
+            <div class="section-title mb-5">
+                <h2 class="text-accent">Đánh giá từ chuyên gia</h2>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-6 mb-3 mb-md-0">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/gTKUKidbe0A" title="Đánh giá từ Kazuki Yoshida"
+                            allowfullscreen loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin">
+                        </iframe>
+                    </div>
+                    <blockquote class="blockquote text-center text-md-center mt-3">
+                        <p class="mb-2">
+                            “Phương pháp đào tạo tại trung tâm mang tính thực tiễn cao, giúp học viên tiến bộ nhanh
+                            chóng chỉ sau vài tuần.”
+                        </p>
+                        <footer class="blockquote-footer mt-2">Kazuki Yoshida – CEO CLASSARA INC.</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Các Bước Đăng Ký Học -->
+    <section id="steps" class="section text-center bg-light py-5">
+        <div class="container px-2 px-md-4">
+            <div class="section-title mb-4">
+                <h2 class="text-accent">Các Bước Đăng Ký</h2>
+            </div>
+
+            <div class="accordion accordion-flush" id="registerSteps">
+
+                <div class="accordion-item border rounded mb-3 shadow-sm bg-white">
+                    <h2 class="accordion-header" id="step1">
+                        <button class="accordion-button fs-5" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                            1. 🎉 Đăng ký làm thành viên
+                        </button>
+                    </h2>
+                    <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="step1"
+                        data-bs-parent="#registerSteps">
+                        <div class="accordion-body text-start">
+                            Đầu tiên, ba mẹ sẽ giúp con điền một vài thông tin cơ bản như tên, giới tính và ngày sinh.
+                            Việc này giúp giáo viên hiểu rõ hơn về con để hướng dẫn phù hợp. Sau bước này, con chính
+                            thức trở thành thành viên nhí của ngôi nhà học tập PSI!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border rounded mb-3 shadow-sm bg-white">
+                    <h2 class="accordion-header" id="step2">
+                        <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                            2. 🧪 Tham gia buổi học thử miễn phí
+                        </button>
+                    </h2>
+                    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="step2"
+                        data-bs-parent="#registerSteps">
+                        <div class="accordion-body text-start">
+                            Con sẽ tham gia một buổi học thử hoàn toàn miễn phí để làm quen với giáo viên và phương pháp
+                            học. Đây là cơ hội tuyệt vời để con cảm nhận môi trường học tập trước khi chính thức bắt
+                            đầu.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border rounded mb-3 shadow-sm bg-white">
+                    <h2 class="accordion-header" id="step3">
+                        <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                            3. 💬 Góp ý & Điều chỉnh
+                        </button>
+                    </h2>
+                    <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="step3"
+                        data-bs-parent="#registerSteps">
+                        <div class="accordion-body text-start">
+                            Sau buổi học thử, nếu cần điều chỉnh thời gian, giáo viên hoặc phương pháp học, ba mẹ chỉ
+                            cần liên hệ – chúng tôi luôn lắng nghe và hỗ trợ để con có trải nghiệm học tập tốt nhất.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border rounded mb-3 shadow-sm bg-white">
+                    <h2 class="accordion-header" id="step4">
+                        <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                            4. 🎯 Chọn khóa học phù hợp
+                        </button>
+                    </h2>
+                    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="step4"
+                        data-bs-parent="#registerSteps">
+                        <div class="accordion-body text-start">
+                            Ba mẹ cùng con lựa chọn khóa học phù hợp theo mục tiêu và thời lượng mong muốn. Chúng tôi
+                            cung cấp nhiều gói học linh hoạt và đa dạng, phù hợp với mọi nhu cầu.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border rounded mb-3 shadow-sm bg-white">
+                    <h2 class="accordion-header" id="step5">
+                        <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                            5. 💳 Thanh toán & bắt đầu hành trình
+                        </button>
+                    </h2>
+                    <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="step5"
+                        data-bs-parent="#registerSteps">
+                        <div class="accordion-body text-start">
+                            Sau khi chọn khóa học, ba mẹ tiến hành thanh toán học phí. Ngay sau đó, lịch học và tài liệu
+                            sẽ được gửi đến để con sẵn sàng bắt đầu hành trình học tập đầy cảm hứng!
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Tin tức -->
+    <section id="news" class="section bg-white">
+        <div class="container text-center">
+            <div class="section-title mb-5">
+                <h2 class="text-accent">Tin tức & Cập nhật</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="https://picsum.photos/600/400?random=3" alt="Ảnh bài viết"
+                                class="img-thumnai; w-100">
+                            <h5 class="card-title">Khai giảng khóa hè 2025</h5>
+                            <p class="card-text">Khóa học hè đặc biệt dành cho học sinh từ 6-15 tuổi, bắt đầu từ 10/7.
+                            </p>
+                            <div class="text-end">
+                                <time class="text-muted small" datetime="2025-06-18">18/06/2025</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="https://picsum.photos/600/400?random=3" alt="Ảnh bài viết"
+                                class="img-thumnai; w-100">
+                            <h5 class="card-title">Khai giảng khóa hè 2025</h5>
+                            <p class="card-text">Khóa học hè đặc biệt dành cho học sinh từ 6-15 tuổi, bắt đầu từ 10/7.
+                            </p>
+                            <div class="text-end">
+                                <time class="text-muted small" datetime="2025-06-18">18/06/2025</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="https://picsum.photos/600/400?random=3" alt="Ảnh bài viết"
+                                class="img-thumnai; w-100">
+                            <h5 class="card-title">Khai giảng khóa hè 2025</h5>
+                            <p class="card-text">Khóa học hè đặc biệt dành cho học sinh từ 6-15 tuổi, bắt đầu từ 10/7.
+                            </p>
+                            <div class="text-end">
+                                <time class="text-muted small" datetime="2025-06-18">18/06/2025</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class=" p-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 footer-section ">
+                    <div class="footer-logo">
+                        <img src="./asset/logo.png" alt="Logo Công Ty" class="footer-logo-img w-50">
+
+                        <h5 class="h5">
+                            CÔNG TY TNHH CLASSARA INC
+                        </h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                Địa chỉ: Số 22, ngõ 114/18, Tân Phong, Thụy Phương, Q.Bắc Từ Liêm,
+                                Hà Nội
+                            </li>
+                            <li>
+                                Hotline: +84 583 874 241
+                            </li>
+                            <li>
+                                Email: info@classara.com
+                            </li>
+                            <li>
+                                Website: www.psi.edu.vn
+                            </li>
+                        </ul>
+                        <div class="footer-seal">
+                            <!-- <img class="img-fluid w-100" src="./asset/moc.png" alt="Mộc Công Ty"> -->
+                        </div> <!-- Dấu mộc chìm ở đây -->
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <h5>Liên kết nhanh</h5>
+                    <ul class="list-unstyled">
+                        <li> Giới thiệu</li>
+                        <li> Khóa học</li>
+                        <li>Học viên nói về chúng tôi</li>
+                        <li>Đánh giá từ chuyên gia</li>
+                    </ul>
+                </div>
+
+                <!-- Cột 3: Mạng xã hội -->
+                <div class="col-md-2 mb-4">
+                    <h5>Mạng xã hội</h5>
+                    <div class="d-flex flex-wrap gap-2 mt-2">
+                        <a href="https://youtube.com/@yourchannel" target="_blank">
+                            <img src="./asset/youtube.svg" alt="YouTube" class="social-icon" style="width: 32px;">
+                        </a>
+                        <a href="https://zalo.me/123456789" target="_blank">
+                            <img src="./asset/zalo.svg" alt="Zalo" class="social-icon" style="width: 32px;">
+                        </a>
+                        <a href="https://instagram.com/youraccount" target="_blank">
+                            <img src="./asset/instagram.svg" alt="Instagram" class="social-icon" style="width: 32px;">
+                        </a>
+                        <a href="https://facebook.com/yourpage" target="_blank">
+                            <img src="./asset/facebook.svg" alt="Facebook" class="social-icon" style="width: 32px;">
+                        </a>
+                        <a href="https://tiktok.com/@youraccount" target="_blank">
+                            <img src="./asset/tiktok.svg" alt="Tiktok" class="social-icon" style="width: 32px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Đường kẻ ngang -->
+        <hr class="border-light my-3">
+        <!-- Bản quyền -->
+        <div class="text-center small text-dark ">
+            <p>© 2025 PSI Education. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal: Login -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Đăng nhập</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <input class="form-control mb-3" placeholder="Email">
+                    <input type="password" class="form-control mb-3" placeholder="Mật khẩu">
+                    <button type="button" class="btn btn-accent w-100">Đăng nhập</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Register -->
+    <div class="modal fade" id="registerModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Đăng ký</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <input class="form-control mb-3" placeholder="Họ và tên">
+                    <input class="form-control mb-3" placeholder="Email">
+                    <input type="password" class="form-control mb-3" placeholder="Mật khẩu">
+                    <button type="button" class="btn btn-accent w-100">Đăng ký</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./js/award.js"></script>
+<script src="./js/teacher.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init();</script> -->
+
+</html>

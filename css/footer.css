@@ -1,0 +1,40 @@
+
+/* Dấu mộc chìm dưới thông tin */
+.footer-seal {
+    position: absolute;
+    bottom: 180px; /* Đặt dấu mộc ở dưới cùng của phần tử */
+    left: 60%;
+    transform: translateX(-50%); /* Căn giữa dấu mộc */
+    width: 180px;  /* Độ rộng của dấu mộc */
+    height: 180px; /* Độ cao của dấu mộc */
+    /* background-image: url('../asset/moc.png');   */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.6;  /* Dấu mộc chìm (opacity thấp) */
+    pointer-events: none; /* Đảm bảo dấu mộc không tương tác với người dùng */
+}
+ .footer-logo-img {
+            max-width: 120px;
+        }
+
+        .footer-section ul li {
+            line-height: 1.6;
+        }
+
+        .footer-seal img {
+            max-width: 100px;
+        }
+
+        .social-icon {
+            transition: transform 0.2s ease, filter 0.2s ease;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.2);
+            filter: brightness(1.2);
+        }
+
+        a.text-white:hover {
+            text-decoration: underline;
+        }
