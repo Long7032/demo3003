@@ -3,7 +3,7 @@
 Đây là dự án demo giao diện trang chủ giới thiệu PSI Education, được xây dựng bằng các công nghệ web phổ biến hiện nay.
 
 ## 🔗 Link GitHub
-👉 [https://github.com/Long7032/demo3003.git](https://github.com/Long7032/demo3003.git)
+👉 [https://github.com/Long7032/demo3003.git](https://long7032.github.io/demo3003/)
 
 ## 🛠️ Công nghệ sử dụng
 - **HTML5**: Cấu trúc nội dung trang web.
