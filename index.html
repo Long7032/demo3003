@@ -60,6 +60,26 @@
             width: 60%;
             left: 20%;
         }
+
+        /* Teacher */
+        .carousel-control-prev-custom,
+        .carousel-control-next-custom {
+
+
+            align-items: center;
+            justify-content: center;
+            background-color: #e9ecef;
+            /* màu xám nhạt */
+            border: none;
+            opacity: 0.9;
+            transition: all 0.3s ease;
+        }
+
+        .carousel-control-prev-custom:hover,
+        .carousel-control-next-custom:hover {
+            background-color: #dee2e6;
+            opacity: 1;
+        }
     </style>
     <!-- <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" /> -->
 </head>
@@ -317,7 +337,7 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="p-4 bg-white shadow-sm rounded h-100 hover-scale">
                         <i class="bi bi-cash-coin text-success fs-1 mb-3"></i>
-                        <h5 class="fw-bold">Chỉ từ 55.000đ/buổi</h5>
+                        <h5 class="fw-bold">Chỉ từ 75.000đ/buổi</h5>
                         <p>25 phút học hiệu quả, tiết kiệm chi phí</p>
                     </div>
                 </div>
@@ -430,23 +450,23 @@
             </div>
 
             <!-- Nav tabs pills -->
-            <ul class="nav nav-pills custom-tab-pills justify-content-center mb-5" id="pills-tab" role="tablist">
+            <ul class="nav nav-pills custom-tab-pills justify-content-center mb-5 gap-4" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all"
                         type="button" role="tab" aria-controls="pills-all" aria-selected="true">
-                        <i class="bi bi-collection"></i> Tất cả
+                        <i class="bi bi-collection"></i> Khóa Học Trẻ Em
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="pills-ielts-tab" data-bs-toggle="pill" data-bs-target="#pills-ielts"
                         type="button" role="tab" aria-controls="pills-ielts" aria-selected="false">
-                        <i class="bi bi-translate"></i> IELTS
+                        <i class="bi bi-translate"></i> Khóa Học Chứng chỉ
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="pills-toeic-tab" data-bs-toggle="pill" data-bs-target="#pills-toeic"
                         type="button" role="tab" aria-controls="pills-toeic" aria-selected="false">
-                        <i class="bi bi-journal-bookmark"></i> TOEIC
+                        <i class="bi bi-journal-bookmark"></i> TESOL
                     </button>
                 </li>
             </ul>
@@ -478,10 +498,46 @@
                         </div>
                     </div>
                     <div class="tab-pane fade" id="pills-ielts" role="tabpanel" aria-labelledby="pills-ielts-tab">
-                        <p class="text-center">Khóa học IELTS sẽ được hiển thị tại đây.</p>
+                        <div class="row g-4">
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="card h-100 shadow-sm border-0">
+                                    <img src="./asset/logo.png" class="card-img-top w-50 mx-auto mt-4" alt="Gia sư 1:1">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title fw-bold">Gia sư 1:1</h5>
+                                        <ul class="ps-3 text-start small mb-3">
+                                            <li>Giáo trình Global Success</li>
+                                            <li>Ôn tập và học bài mới</li>
+                                            <li>Tập trung trọng tâm lớp</li>
+                                        </ul>
+                                        <p class="mb-0">
+                                            <span class="text-decoration-line-through text-muted">150.000đ</span><br>
+                                            <span class="text-danger fw-bold">75.000đ / buổi (25 phút)</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="tab-pane fade" id="pills-toeic" role="tabpanel" aria-labelledby="pills-toeic-tab">
-                        <p class="text-center">Khóa học TOEIC sẽ được hiển thị tại đây.</p>
+                        <div class="row g-4">
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="card h-100 shadow-sm border-0">
+                                    <img src="./asset/logo.png" class="card-img-top w-50 mx-auto mt-4" alt="Gia sư 1:1">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title fw-bold">Gia sư 1:1</h5>
+                                        <ul class="ps-3 text-start small mb-3">
+                                            <li>Giáo trình Global Success</li>
+                                            <li>Ôn tập và học bài mới</li>
+                                            <li>Tập trung trọng tâm lớp</li>
+                                        </ul>
+                                        <p class="mb-0">
+                                            <span class="text-decoration-line-through text-muted">150.000đ</span><br>
+                                            <span class="text-danger fw-bold">75.000đ / buổi (25 phút)</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -554,7 +610,7 @@
                 <h2 class="text-accent">Giáo viên tiêu biểu</h2>
             </div>
 
-            <div id="teacherCarousel" class="carousel slide position-relative pb-5" data-bs-ride="carousel">
+            <div id="teacherCarousel" class="carousel slide position-relative pb-5 " data-bs-ride="carousel">
                 <!-- Slides -->
                 <div class="carousel-inner">
                     <!-- Giáo viên 1 -->
@@ -575,7 +631,7 @@
                                 <div class="col-12 col-md-8 text-start">
                                     <div class="teacher-header d-flex align-items-center gap-2">
                                         <img src="https://flagcdn.com/w20/vn.png" alt="Quốc kỳ Việt Nam" class="flag" />
-                                        <h5 class="mb-0">Nguyễn Đức Long</h5>
+                                        <h3 class="mb-0">Nguyễn Đức Long</h3>
                                         <button class="btn btn-sm p-0 ms-2"
                                             onclick="document.getElementById('audio1').play()"
                                             aria-label="Nghe phát âm tên">
@@ -659,7 +715,7 @@
                                 <div class="col-12 col-md-8 text-start">
                                     <div class="teacher-header d-flex align-items-center gap-2">
                                         <img src="https://flagcdn.com/w20/vn.png" alt="Quốc kỳ Việt Nam" class="flag" />
-                                        <h5 class="mb-0">Nguyễn Đức Long</h5>
+                                        <h3 class="mb-0">Nguyễn Đức Long</h3>
                                         <button class="btn btn-sm p-0 ms-2"
                                             onclick="document.getElementById('audio1').play()"
                                             aria-label="Nghe phát âm tên">
@@ -743,7 +799,7 @@
                                 <div class="col-12 col-md-8 text-start">
                                     <div class="teacher-header d-flex align-items-center gap-2">
                                         <img src="https://flagcdn.com/w20/vn.png" alt="Quốc kỳ Việt Nam" class="flag" />
-                                        <h5 class="mb-0">Nguyễn Đức Long</h5>
+                                        <h3 class="h3 mb-0">Nguyễn Đức Long</h3>
                                         <button class="btn btn-sm p-0 ms-2"
                                             onclick="document.getElementById('audio1').play()"
                                             aria-label="Nghe phát âm tên">
@@ -816,24 +872,32 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- Indicators/dots -->
                 <div class="carousel-indicators custom-dots">
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"
+                    <button type="button" data-bs-target="#teacherCarousel" data-bs-slide-to="0" class="active"
                         aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#teacherCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#teacherCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
 
 
                 <!-- Controls -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#teacherCarousel"
-                    data-bs-slide="prev">
+                <button
+                    class="carousel-control-prev carousel-control-custom d-flex align-items-center justify-content-center"
+                    type="button" data-bs-target="#teacherCarousel" data-bs-slide="prev" aria-label="Trước">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#teacherCarousel"
-                    data-bs-slide="next">
+
+                <button
+                    class="carousel-control-next carousel-control-custom d-flex align-items-center justify-content-center"
+                    type="button" data-bs-target="#teacherCarousel" data-bs-slide="next" aria-label="Tiếp theo">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 </button>
+
+
             </div>
         </div>
     </section>
@@ -903,7 +967,119 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Avatar Nguyễn Thị Lan"
+                                    class="review-avatar me-3" />
+                                <div class="flex-grow-1">
+                                    <h5 class="mb-0 fw-semibold">Nguyễn Thị Lan</h5>
+                                    <small class="text-muted">Học viên khóa Frontend</small>
+                                </div>
 
+                            </div>
+                            <p class="text-muted mb-3">
+                                Khóa học rất bổ ích, giảng viên nhiệt tình và dễ hiểu. Các bài tập thực hành rất sát
+                                thực tế
+                                và giúp em áp dụng ngay vào công việc. Cảm ơn trung tâm rất nhiều!
+                            </p>
+                            <div class="video-wrapper">
+                                <div class="ratio ratio-16x9">
+                                    <iframe src="https://www.youtube.com/embed/gTKUKidbe0A"
+                                        title="Đánh giá từ Kazuki Yoshida" allowfullscreen loading="lazy"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Avatar Trần Văn Minh"
+                                    class="review-avatar me-3" />
+                                <div class="flex-grow-1">
+                                    <h5 class="mb-0 fw-semibold">Trần Văn Minh</h5>
+                                    <small class="text-muted">Học viên UI/UX</small>
+                                </div>
+
+                            </div>
+                            <p class="text-muted mb-3">
+                                Chương trình học thiết kế rất hiện đại, được thực hành trên Figma liên tục. Môi trường
+                                học
+                                tập thân thiện và có hỗ trợ việc làm sau khóa học.
+                            </p>
+                            <div class="video-wrapper youtube-thumbnail">
+                                <div class="ratio ratio-16x9">
+                                    <iframe src="https://www.youtube.com/embed/gTKUKidbe0A"
+                                        title="Đánh giá từ Kazuki Yoshida" allowfullscreen loading="lazy"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Avatar Nguyễn Thị Lan"
+                                    class="review-avatar me-3" />
+                                <div class="flex-grow-1">
+                                    <h5 class="mb-0 fw-semibold">Nguyễn Thị Lan</h5>
+                                    <small class="text-muted">Học viên khóa Frontend</small>
+                                </div>
+
+                            </div>
+                            <p class="text-muted mb-3">
+                                Khóa học rất bổ ích, giảng viên nhiệt tình và dễ hiểu. Các bài tập thực hành rất sát
+                                thực tế
+                                và giúp em áp dụng ngay vào công việc. Cảm ơn trung tâm rất nhiều!
+                            </p>
+                            <div class="video-wrapper">
+                                <div class="ratio ratio-16x9">
+                                    <iframe src="https://www.youtube.com/embed/gTKUKidbe0A"
+                                        title="Đánh giá từ Kazuki Yoshida" allowfullscreen loading="lazy"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Avatar Trần Văn Minh"
+                                    class="review-avatar me-3" />
+                                <div class="flex-grow-1">
+                                    <h5 class="mb-0 fw-semibold">Trần Văn Minh</h5>
+                                    <small class="text-muted">Học viên UI/UX</small>
+                                </div>
+
+                            </div>
+                            <p class="text-muted mb-3">
+                                Chương trình học thiết kế rất hiện đại, được thực hành trên Figma liên tục. Môi trường
+                                học
+                                tập thân thiện và có hỗ trợ việc làm sau khóa học.
+                            </p>
+                            <div class="video-wrapper youtube-thumbnail">
+                                <div class="ratio ratio-16x9">
+                                    <iframe src="https://www.youtube.com/embed/gTKUKidbe0A"
+                                        title="Đánh giá từ Kazuki Yoshida" allowfullscreen loading="lazy"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Navigation -->
@@ -1039,58 +1215,104 @@
     </section>
 
     <!-- Tin tức -->
-    <section id="news" class="section bg-white">
-        <div class="container text-center">
-            <div class="section-title mb-5">
-                <h2 class="text-accent">Tin tức & Cập nhật</h2>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="https://picsum.photos/600/400?random=3" alt="Ảnh bài viết"
-                                class="img-thumnai; w-100">
-                            <h5 class="card-title">Khai giảng khóa hè 2025</h5>
-                            <p class="card-text">Khóa học hè đặc biệt dành cho học sinh từ 6-15 tuổi, bắt đầu từ 10/7.
-                            </p>
-                            <div class="text-end">
-                                <time class="text-muted small" datetime="2025-06-18">18/06/2025</time>
+    <section id="news" class="section container bg-white">
+        <div class="section-title mb-5">
+            <h2 class="text-accent">Đánh giá của học viên</h2>
+        </div>
+        <div class="row justify-content-center g-4">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="https://picsum.photos/600/400?random=3" alt="Ảnh bài viết"
+                                            class="img-thumnai; w-100">
+                                        <h5 class="card-title">Khai giảng khóa hè 2025</h5>
+                                        <p class="card-text">Khóa học hè đặc biệt dành cho học sinh từ 6-15 tuổi, bắt
+                                            đầu từ 10/7.
+                                        </p>
+                                        <div class="text-end">
+                                            <time class="text-muted small" datetime="2025-06-18">18/06/2025</time>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="https://picsum.photos/600/400?random=3" alt="Ảnh bài viết"
-                                class="img-thumnai; w-100">
-                            <h5 class="card-title">Khai giảng khóa hè 2025</h5>
-                            <p class="card-text">Khóa học hè đặc biệt dành cho học sinh từ 6-15 tuổi, bắt đầu từ 10/7.
-                            </p>
-                            <div class="text-end">
-                                <time class="text-muted small" datetime="2025-06-18">18/06/2025</time>
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="https://picsum.photos/600/400?random=3" alt="Ảnh bài viết"
+                                            class="img-thumnai; w-100">
+                                        <h5 class="card-title">Khai giảng khóa hè 2025</h5>
+                                        <p class="card-text">Khóa học hè đặc biệt dành cho học sinh từ 6-15 tuổi, bắt
+                                            đầu từ 10/7.
+                                        </p>
+                                        <div class="text-end">
+                                            <time class="text-muted small" datetime="2025-06-18">18/06/2025</time>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="https://picsum.photos/600/400?random=3" alt="Ảnh bài viết"
-                                class="img-thumnai; w-100">
-                            <h5 class="card-title">Khai giảng khóa hè 2025</h5>
-                            <p class="card-text">Khóa học hè đặc biệt dành cho học sinh từ 6-15 tuổi, bắt đầu từ 10/7.
-                            </p>
-                            <div class="text-end">
-                                <time class="text-muted small" datetime="2025-06-18">18/06/2025</time>
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="https://picsum.photos/600/400?random=3" alt="Ảnh bài viết"
+                                            class="img-thumnai; w-100">
+                                        <h5 class="card-title">Khai giảng khóa hè 2025</h5>
+                                        <p class="card-text">Khóa học hè đặc biệt dành cho học sinh từ 6-15 tuổi, bắt
+                                            đầu từ 10/7.
+                                        </p>
+                                        <div class="text-end">
+                                            <time class="text-muted small" datetime="2025-06-18">18/06/2025</time>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
                     </div>
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="https://picsum.photos/600/400?random=3" alt="Ảnh bài viết"
+                                            class="img-thumnai; w-100">
+                                        <h5 class="card-title">Khai giảng khóa hè 2025</h5>
+                                        <p class="card-text">Khóa học hè đặc biệt dành cho học sinh từ 6-15 tuổi, bắt
+                                            đầu từ 10/7.
+                                        </p>
+                                        <div class="text-end">
+                                            <time class="text-muted small" datetime="2025-06-18">18/06/2025</time>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
+
+                <!-- Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
-    </section>
 
+    </section>
     <!-- Footer -->
     <footer class=" p-1">
         <div class="container">
